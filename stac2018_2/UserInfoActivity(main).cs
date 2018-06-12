@@ -42,8 +42,7 @@ namespace stac2018_2
 
         private void MoreOptionButton_Click(object sender, System.EventArgs e)
         {
-            MoreOptionButton.SetImageResource(Resource.Drawable.moreoptionwhite);
-            MoreOptionButton.Background = (BackGround);
+     
         }
 
         
