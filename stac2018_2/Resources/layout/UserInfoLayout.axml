@@ -13,8 +13,125 @@
         p1:layout_width="match_parent"
         p1:layout_height="497.5dp"
         p1:id="@+id/linearLayout2"
-        p1:layout_weight="1"
-        p1:background="#ffffffff" />
+        p1:background="#ffffffff">
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/imageView1" />
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout4">
+            <LinearLayout
+                p1:layout_weight="1"
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/linearLayout5">
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/linearLayout7">
+                    <ImageButton
+                        p1:src="@drawable/clockicon"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/imageButton1" />
+                    <TextView
+                        p1:text="85bpm"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView1"
+                        p1:textColor="#ff000000" />
+                    <TextView
+                        p1:text="심박수"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView5"
+                        p1:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/linearLayout8">
+                    <ImageButton
+                        p1:src="@android:drawable/ic_menu_gallery"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/imageButton2" />
+                    <TextView
+                        p1:text="1회5알"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView2"
+                        p1:textColor="#ff000000" />
+                    <TextView
+                        p1:text="Text"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView6"
+                        p1:textColor="#ff000000" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                p1:layout_weight="1"
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/linearLayout6">
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/linearLayout9">
+                    <ImageButton
+                        p1:src="@android:drawable/ic_menu_gallery"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/imageButton3" />
+                    <TextView
+                        p1:text="식후30분"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView3"
+                        p1:textColor="#ff000000" />
+                    <TextView
+                        p1:text="투약시간"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView7"
+                        p1:textColor="#ff000000" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/linearLayout10">
+                    <ImageButton
+                        p1:src="@android:drawable/ic_menu_gallery"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/imageButton4" />
+                    <TextView
+                        p1:text="집"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView4"
+                        p1:textColor="#ff000000" />
+                    <TextView
+                        p1:text="현위치"
+                        p1:layout_width="match_parent"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView8"
+                        p1:textColor="#ff000000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"

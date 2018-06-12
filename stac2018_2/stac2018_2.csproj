@@ -59,6 +59,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInfoActivity.cs" />
+    <Compile Include="VideoCallActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -100,6 +101,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\moreoptionwhite.png" />
     <AndroidResource Include="Resources\drawable-hdpi\userinfowhite.png" />
     <AndroidResource Include="Resources\drawable-hdpi\videocallwhite.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\clockicon.png" />
     <Content Include="Resources\drawable-hdpi\videocallicon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\userinfoicon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\userinfoicon.png" />
@@ -124,6 +126,18 @@
     <AndroidResource Include="Resources\layout\UserInfoLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\VideoCallLayout.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-mdpi\clockicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\hearticon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\mapicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\peelicon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon_mapicon_clock%402x.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\clockicon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\clockicon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\clockicon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-ldpi\videocallicon.png" />

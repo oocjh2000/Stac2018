@@ -37,10 +37,8 @@ namespace stac2018_2
 
         private void UserInfoButton_Click(object sender, System.EventArgs e)
         {
-            UserInfoButton.SetImageResource(Resource.Drawable.userinfowhite);
-            UserInfoButton.Background = (BackGround);
-            var intent = new Intent(this, typeof(UserInfoActivity));
-            StartActivity(intent);
+            
+            StartActivity(typeof(UserInfoActivity));
             OverridePendingTransition(0, 0);
         }
 
