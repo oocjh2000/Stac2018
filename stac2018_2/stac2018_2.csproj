@@ -58,6 +58,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfoActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -91,7 +92,50 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2"/>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\userinfoicon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\moreoptionicon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\moreoptionwhite.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\userinfowhite.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\videocallwhite.png" />
+    <Content Include="Resources\drawable-hdpi\videocallicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\userinfoicon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\userinfoicon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\userinfoicon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\userinfoicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\moreoptionicon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\moreoptionicon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\moreoptionicon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\moreoptionicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\moreoptionwhite.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\moreoptionwhite.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\moreoptionwhite.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\moreoptionwhite.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\userinfowhite.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\userinfowhite.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\userinfowhite.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\userinfowhite.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\videocallwhite.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\videocallwhite.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\videocallwhite.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\videocallwhite.png" />
+    <AndroidResource Include="Resources\layout\UserInfoLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldpi\videocallicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\videocallicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\videocallicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\videocallicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

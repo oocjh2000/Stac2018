@@ -46,8 +46,8 @@
             p1:layout_marginTop="2dp"
             p1:layout_marginLeft="1dp"
             p1:layout_marginRight="1dp"
-            p1:background="#ffffffff"
-            p1:src="@drawable/userinfoicon" />
+            p1:background="#3F51B5"
+            p1:src="@drawable/userinfowhite" />
         <ImageButton
             p1:adjustViewBounds="true"
             p1:layout_width="wrap_content"
