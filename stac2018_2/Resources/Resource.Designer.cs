@@ -2381,6 +2381,9 @@ namespace stac2018_2
 			// aapt resource value: 0x7f08008f
 			public const int UserInfoButton = 2131230863;
 			
+			// aapt resource value: 0x7f0800c5
+			public const int VideoCallButton = 2131230917;
+			
 			// aapt resource value: 0x7f08008e
 			public const int ViedoCallButton = 2131230862;
 			
@@ -2666,8 +2669,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int masked = 2131230918;
+			// aapt resource value: 0x7f0800c7
+			public const int masked = 2131230919;
 			
 			// aapt resource value: 0x7f0800a5
 			public const int media_actions = 2131230885;
@@ -2945,8 +2948,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int visible = 2131230917;
+			// aapt resource value: 0x7f0800c6
+			public const int visible = 2131230918;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

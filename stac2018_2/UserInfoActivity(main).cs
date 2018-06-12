@@ -26,7 +26,7 @@ namespace stac2018_2
             BackGround = new ColorDrawable(Color.ParseColor("#3F51B5"));
             BackGroundWhite = new ColorDrawable(Color.ParseColor("#FFFFFF"));
 
-            VideoCallButton = FindViewById<ImageButton>(Resource.Id.ViedoCallButton);
+            VideoCallButton = FindViewById<ImageButton>(Resource.Id.VideoCallButton);
             MoreOptionButton = FindViewById<ImageButton>(Resource.Id.MoreOptionButton);
 
            

@@ -15,12 +15,15 @@ namespace stac2018_2
     [Activity(Label = "MoreInfoActivity")]
     public class MoreInfoActivity : Activity
     {
+        ImageButton UserIfoButton;
+        ImageButton VideoCallButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.MoreInfoLayout);
-
+            UserIfoButton = FindViewById<ImageButton>(Resource.Id.UserInfoButton);
+            VideoCallButton = FindViewById<ImageButton>(Resource.Id.ViedoCallButton);
             // Create your application here
         }
     }
