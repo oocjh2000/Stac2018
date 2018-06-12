@@ -12,15 +12,14 @@ using Android.Widget;
 
 namespace stac2018_2
 {
-    [Activity(Label = "VideoCallActivity")]
-    public class VideoCallActivity : Activity
+    [Activity(Label = "MoreInfoActivity")]
+    public class MoreInfoActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.VideoCallLayout);
-            Android.App.ActionBar actionBar = ActionBar;
-            actionBar.Show();
+
+            SetContentView(Resource.Layout.MoreInfoLayout);
 
             // Create your application here
         }

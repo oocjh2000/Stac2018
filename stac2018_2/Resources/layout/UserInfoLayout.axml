@@ -2,144 +2,182 @@
 <LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     p1:orientation="vertical"
     p1:minWidth="25px"
-    p1:minHeight="25px"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="match_parent"
-        p1:layout_height="497.5dp"
-        p1:id="@+id/linearLayout2"
-        p1:background="#ffffffff">
-        <ImageView
-            p1:src="@android:drawable/ic_menu_gallery"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/imageView1" />
-        <LinearLayout
-            p1:orientation="vertical"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/linearLayout4">
-            <LinearLayout
-                p1:layout_weight="1"
-                p1:orientation="horizontal"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/linearLayout5">
-                <LinearLayout
-                    p1:orientation="vertical"
-                    p1:layout_width="wrap_content"
-                    p1:layout_height="match_parent"
-                    p1:id="@+id/linearLayout7">
-                    <ImageButton
-                        p1:src="@drawable/clockicon"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/imageButton1" />
-                    <TextView
-                        p1:text="85bpm"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView1"
-                        p1:textColor="#ff000000" />
-                    <TextView
-                        p1:text="심박수"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView5"
-                        p1:textColor="#ff000000" />
-                </LinearLayout>
-                <LinearLayout
-                    p1:orientation="vertical"
-                    p1:layout_width="wrap_content"
-                    p1:layout_height="match_parent"
-                    p1:id="@+id/linearLayout8">
-                    <ImageButton
-                        p1:src="@android:drawable/ic_menu_gallery"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/imageButton2" />
-                    <TextView
-                        p1:text="1회5알"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView2"
-                        p1:textColor="#ff000000" />
-                    <TextView
-                        p1:text="Text"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView6"
-                        p1:textColor="#ff000000" />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                p1:layout_weight="1"
-                p1:orientation="horizontal"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/linearLayout6">
-                <LinearLayout
-                    p1:orientation="vertical"
-                    p1:layout_width="wrap_content"
-                    p1:layout_height="match_parent"
-                    p1:id="@+id/linearLayout9">
-                    <ImageButton
-                        p1:src="@android:drawable/ic_menu_gallery"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/imageButton3" />
-                    <TextView
-                        p1:text="식후30분"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView3"
-                        p1:textColor="#ff000000" />
-                    <TextView
-                        p1:text="투약시간"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView7"
-                        p1:textColor="#ff000000" />
-                </LinearLayout>
-                <LinearLayout
-                    p1:orientation="vertical"
-                    p1:layout_width="wrap_content"
-                    p1:layout_height="match_parent"
-                    p1:id="@+id/linearLayout10">
-                    <ImageButton
-                        p1:src="@android:drawable/ic_menu_gallery"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/imageButton4" />
-                    <TextView
-                        p1:text="집"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView4"
-                        p1:textColor="#ff000000" />
-                    <TextView
-                        p1:text="현위치"
-                        p1:layout_width="match_parent"
-                        p1:layout_height="wrap_content"
-                        p1:id="@+id/textView8"
-                        p1:textColor="#ff000000" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+<!--프로필사진-->
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout8"
+        p1:layout_weight="1"
+        p1:gravity="center"
+        p1:background="#ffffffff">
+        <ImageView
+            p1:adjustViewBounds="true"
+            p1:src="@drawable/clockicon"
+            p1:layout_width="wrap_content"
+            p1:layout_height="150dp"
+            p1:id="@+id/imageView1" />
+    </LinearLayout>
+<!--프로필사진-->
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
         p1:id="@+id/linearLayout3"
-        p1:layout_marginTop="0.0dp"
+        p1:layout_weight="1">
+    <!--심장박동-->
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout4"
+            p1:layout_weight="1"
+            p1:background="#ffffffff">
+            <ImageButton
+                p1:adjustViewBounds="true"
+                p1:src="@drawable/hearticon"
+                p1:layout_width="match_parent"
+                p1:layout_height="100dp"
+                p1:id="@+id/imageButton1"
+                p1:scaleType="fitCenter"
+                p1:background="#ffffffff" />
+            <TextView
+                p1:text="85 Bpm"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView1"
+                p1:textSize="25dp"
+                p1:gravity="center"
+                p1:textColor="#ff000000" />
+            <TextView
+                p1:text="심박수"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView2"
+                p1:textSize="20dp"
+                p1:gravity="center"
+                p1:textColor="#ff000000" />
+        </LinearLayout>
+    <!--심장박동-->
+    <!--투약횟수-->
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout5"
+            p1:layout_weight="1"
+            p1:background="#ffffffff">
+            <ImageButton
+                p1:adjustViewBounds="true"
+                p1:src="@drawable/peelicon"
+                p1:layout_width="match_parent"
+                p1:layout_height="100dp"
+                p1:id="@+id/imageButton5"
+                p1:scaleType="fitCenter"
+                p1:background="#ffffffff" />
+            <TextView
+                p1:text="1회 5알"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView3"
+                p1:gravity="center"
+                p1:textColor="#ff000000"
+                p1:textSize="25dp" />
+            <TextView
+                p1:text="투여 량"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView4"
+                p1:textColor="#ff000000"
+                p1:textSize="20dp"
+                p1:gravity="center" />
+        </LinearLayout>
+    <!--투약횟수-->
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:background="#ffffffff"
+        p1:layout_weight="1">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout6"
+            p1:layout_weight="1">
+            <ImageButton
+                p1:adjustViewBounds="true"
+                p1:src="@drawable/clockicon"
+                p1:layout_width="match_parent"
+                p1:layout_height="100dp"
+                p1:id="@+id/imageButton3"
+                p1:layout_gravity="center"
+                p1:foregroundGravity="center"
+                p1:background="#ffffffff"
+                p1:scaleType="fitCenter" />
+            <TextView
+                p1:text="식후 30분"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView5"
+                p1:gravity="center"
+                p1:textColor="#ff000000"
+                p1:textSize="25dp" />
+            <TextView
+                p1:text="투약시간"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:textColor="#ff000000"
+                p1:id="@+id/textView6"
+                p1:gravity="center"
+                p1:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout7"
+            p1:layout_weight="1">
+            <ImageButton
+                p1:adjustViewBounds="true"
+                p1:src="@drawable/mapicon"
+                p1:layout_width="match_parent"
+                p1:layout_height="100dp"
+                p1:id="@+id/imageButton4"
+                p1:background="#ffffffff"
+                p1:scaleType="fitCenter" />
+            <TextView
+                p1:text="집"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView7"
+                p1:gravity="center"
+                p1:textColor="#ff000000"
+                p1:textSize="25dp" />
+            <TextView
+                p1:text="현위치"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textView8"
+                p1:textColor="#ff000000"
+                p1:gravity="center"
+                p1:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+<!--아래 보라색버튼-->
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
         p1:background="#ff3f51b5">
         <ImageButton
             p1:adjustViewBounds="true"
@@ -177,4 +215,5 @@
             p1:layout_marginLeft="1dp"
             p1:src="@drawable/moreoptionicon" />
     </LinearLayout>
+<!--아래 보라색버튼-->
 </LinearLayout>
