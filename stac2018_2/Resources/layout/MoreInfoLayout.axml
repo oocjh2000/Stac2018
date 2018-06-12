@@ -56,8 +56,8 @@
             p1:scaleType="fitCenter"
             p1:layout_weight="1"
             p1:layout_marginTop="2dp"
-            p1:background="#ffffffff"
+            p1:background="#ff3f51b5"
             p1:layout_marginLeft="1dp"
-            p1:src="@drawable/moreoptionicon" />
+            p1:src="@drawable/moreoptionwhite" />
     </LinearLayout>
 </LinearLayout>

@@ -19,8 +19,8 @@ namespace stac2018_2
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.VideoCallLayout);
-            Android.App.ActionBar actionBar = ActionBar;
-            actionBar.Show();
+         
+
 
             // Create your application here
         }
