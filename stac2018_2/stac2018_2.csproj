@@ -58,6 +58,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackButtonCloseHandler.cs" />
     <Compile Include="MoreInfoActivity.cs" />
     <Compile Include="MainActivity%28UserInfo%29.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -7,10 +7,11 @@ using Android.Graphics;
 
 namespace stac2018_2
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Name="User.Info.Activity", Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         ImageButton MoreOptionButton;
+        private BackPressCloseHandler BackPressCloseHandler;
         ImageButton VideoCallButton;
        
         Drawable BackGround;
@@ -29,20 +30,27 @@ namespace stac2018_2
             VideoCallButton = FindViewById<ImageButton>(Resource.Id.VideoCallButton);
             MoreOptionButton = FindViewById<ImageButton>(Resource.Id.MoreOptionButton);
 
-           
+            BackPressCloseHandler = new BackPressCloseHandler(this);
+
+
             VideoCallButton.Click += VideoCallButton_Click;
             MoreOptionButton.Click += MoreOptionButton_Click;
         }
 
-
+        override public void OnBackPressed()
+        {
+            BackPressCloseHandler.OnBackPressed();
+        }
         private void VideoCallButton_Click(object sender, System.EventArgs e)
         {
             StartActivity(typeof(VideoCallActivity));
+            OverridePendingTransition(0, 0);
         }
 
         private void MoreOptionButton_Click(object sender, System.EventArgs e)
         {
-     
+            StartActivity(typeof(MoreInfoActivity));
+            OverridePendingTransition(0, 0);
         }
 
         
