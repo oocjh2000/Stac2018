@@ -84,10 +84,6 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable-hdpi\userinfoicon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\userinfowhite.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable-ldpi\clockicon.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -101,10 +97,6 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable-ldpi\userinfoicon.png" />
-    <AndroidResource Include="Resources\drawable-ldpi\userinfowhite.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -140,9 +132,6 @@
     <AndroidResource Include="Resources\drawable-mdpi\moreoptionwhite.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\moreoptionwhite.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\moreoptionwhite.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\userinfowhite.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\userinfowhite.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\userinfowhite.png" />
     <AndroidResource Include="Resources\layout\UserInfoLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -204,6 +193,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-ldpi\videocallwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\userinfowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\userinfowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\userinfowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldpi\userinfowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\userinfowhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
