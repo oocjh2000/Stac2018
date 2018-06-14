@@ -6,7 +6,7 @@ using Android.Widget;
 
 namespace stac2018_2
 {
-    [Activity(Label = "MoreInfoActivity")]
+    [Activity(Label = "MoreInfoActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MoreInfoActivity : Activity
     {
         ImageButton UserIfoButton;

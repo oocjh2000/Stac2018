@@ -13,7 +13,7 @@ using static Android.App.AlertDialog;
 
 namespace stac2018_2
 {
-    [Activity(Label = "VideoCallActivity")]
+    [Activity(Label = "VideoCallActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
    
     public class VideoCallActivity : Activity
     {

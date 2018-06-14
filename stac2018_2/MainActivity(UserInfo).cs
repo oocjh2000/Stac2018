@@ -7,7 +7,7 @@ using Android.Graphics;
 
 namespace stac2018_2
 {
-    [Activity(Name="User.Info.Activity", Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Name="User.Info.Activity", Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true,ScreenOrientation =Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
         ImageButton MoreOptionButton;
