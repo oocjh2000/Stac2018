@@ -1,6 +1,13 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
-using System;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
 using Android.Widget;
 using Java.Lang;
 
@@ -26,10 +33,7 @@ namespace stac2018_2
             }
             if (JavaSystem.CurrentTimeMillis() <= BackPressedTime + 2000)
             {
-                //Android.OS.Process.KillProcess();
-                activity.MoveTaskToBack(true);
                 activity.Finish();
-                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
                 toast.Cancel();
             }
         }
