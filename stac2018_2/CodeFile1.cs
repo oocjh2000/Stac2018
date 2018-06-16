@@ -4,6 +4,8 @@ using Android.Views;
 using Android.Graphics.Drawables;
 using Java.Lang;
 using System.Collections.Generic;
+using Android.Content;
+using Android.Graphics;
 
 public class VideoCallAdapter : BaseAdapter
 {
@@ -12,20 +14,32 @@ public class VideoCallAdapter : BaseAdapter
     public VideoCallAdapter() { }
 
 
-    public override int Count => throw new System.NotImplementedException();
+    public override int Count => videoCallItems.Count;
 
     public override Object GetItem(int position)
     {
-        throw new System.NotImplementedException();
+        return (Object)videoCallItems[position];
     }
 
     public override long GetItemId(int position)
     {
-        throw new System.NotImplementedException();
+        return position;
     }
 
     public override View GetView(int position, View convertView, ViewGroup parent)
     {
-        throw new System.NotImplementedException();
+        int pos = position;
+        Context context = parent.Context;
+
+        return convertView;
+    }
+
+    public void addItem(Drawable icon, string Name)
+    {
+        VideoCallItem callItem = new VideoCallItem();
+
+        callItem.SetIcon(icon);
+        callItem.SetName(Name);
+        videoCallItems.Add(callItem);
     }
 }

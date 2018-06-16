@@ -1,5 +1,6 @@
-﻿using Android.Graphics.Drawables;
-
+﻿using System;
+using Android.Graphics.Drawables;
+using Java.Lang;
 
 public class VideoCallItem
 {
@@ -9,7 +10,7 @@ public class VideoCallItem
     {
         icon = drawable;
     }
-    public void SetIcon(string Name)
+    public void SetName(string Name)
     {
         name = Name;
     }
@@ -20,5 +21,10 @@ public class VideoCallItem
     public string GetName()
     {
         return name;
+    }
+
+    public static explicit operator Java.Lang.Object(VideoCallItem v)
+    {
+        throw new NotImplementedException();
     }
 }
