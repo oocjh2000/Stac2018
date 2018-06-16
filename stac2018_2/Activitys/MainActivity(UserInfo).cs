@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Graphics.Drawables;
 using Android.Graphics;
+using Android.Content;
 
 namespace stac2018_2
 {
@@ -44,7 +45,7 @@ namespace stac2018_2
         private void VideoCallButton_Click(object sender, System.EventArgs e)
         {
             StartActivity(typeof(VideoCallActivity));
-            OverridePendingTransition(0, 0);
+            OverridePendingTransition(0,0);
         }
 
         private void MoreOptionButton_Click(object sender, System.EventArgs e)

@@ -19,12 +19,18 @@ namespace stac2018_2
     {
         ImageButton UserIfoButton;
         ImageButton MoreInfoButton;
+
+        ListView listView;
+
         private BackPressCloseHandler BackPressCloseHandler;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.VideoCallLayout);
+
+            listView = FindViewById<ListView>(Resource.Id.CallListView);
+
 
             UserIfoButton = FindViewById<ImageButton>(Resource.Id.UserInfoButton);
             MoreInfoButton = FindViewById<ImageButton>(Resource.Id.MoreOptionButton);

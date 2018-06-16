@@ -15,7 +15,14 @@
         p1:layout_height="497.5dp"
         p1:id="@+id/linearLayout2"
         p1:layout_weight="1"
-        p1:background="#ffffffff" />
+        p1:background="#ffffffff">
+        <ListView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/CallListView" />
+    </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"
