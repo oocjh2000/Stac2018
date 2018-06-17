@@ -2381,6 +2381,9 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080090
 			public const int MoreOptionButton = 2131230864;
 			
+			// aapt resource value: 0x7f0800c7
+			public const int Name = 2131230919;
+			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
 			
@@ -2678,8 +2681,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int masked = 2131230920;
+			// aapt resource value: 0x7f0800c9
+			public const int masked = 2131230921;
 			
 			// aapt resource value: 0x7f0800a5
 			public const int media_actions = 2131230885;
@@ -2957,8 +2960,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int visible = 2131230919;
+			// aapt resource value: 0x7f0800c8
+			public const int visible = 2131230920;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

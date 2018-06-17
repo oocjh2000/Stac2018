@@ -33,7 +33,9 @@ namespace stac2018_2
             }
             if (JavaSystem.CurrentTimeMillis() <= BackPressedTime + 2000)
             {
+                activity.MoveTaskToBack(true);
                 activity.Finish();
+                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
                 toast.Cancel();
             }
         }

@@ -21,15 +21,20 @@ namespace stac2018_2
         ImageButton MoreInfoButton;
 
         ListView listView;
+        VideoCallAdapter callAdapter = new VideoCallAdapter();
 
         private BackPressCloseHandler BackPressCloseHandler;
-
+       
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.VideoCallLayout);
 
             listView = FindViewById<ListView>(Resource.Id.CallListView);
+            listView.SetAdapter(callAdapter);
+            callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "강용현");
+            callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "안용욱");
+            callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "차재훈");
 
 
             UserIfoButton = FindViewById<ImageButton>(Resource.Id.UserInfoButton);
