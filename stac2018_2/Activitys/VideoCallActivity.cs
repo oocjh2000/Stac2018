@@ -31,7 +31,9 @@ namespace stac2018_2
             SetContentView(Resource.Layout.VideoCallLayout);
 
             listView = FindViewById<ListView>(Resource.Id.CallListView);
-            listView.SetAdapter(callAdapter);
+#pragma warning disable CS0618 // 형식 또는 멤버는 사용되지 않습니다.
+            listView.SetAdapter(adapter: callAdapter);
+#pragma warning restore CS0618 // 형식 또는 멤버는 사용되지 않습니다.
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "강용현");
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "안용욱");
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "차재훈");
