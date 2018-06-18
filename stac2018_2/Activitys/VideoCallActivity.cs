@@ -13,7 +13,7 @@ using static Android.App.AlertDialog;
 
 namespace stac2018_2
 {
-    [Activity(Label = "VideoCallActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Label = "VideoCallActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
    
     public class VideoCallActivity : Activity
     {
@@ -21,7 +21,7 @@ namespace stac2018_2
         ImageButton MoreInfoButton;
 
         ListView listView;
-        VideoCallAdapter callAdapter = new VideoCallAdapter();
+        VideoCallAdapter callAdapter;
 
         private BackPressCloseHandler BackPressCloseHandler;
        
@@ -30,10 +30,10 @@ namespace stac2018_2
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.VideoCallLayout);
 
+            callAdapter = new VideoCallAdapter();
+
             listView = FindViewById<ListView>(Resource.Id.CallListView);
-#pragma warning disable CS0618 // 형식 또는 멤버는 사용되지 않습니다.
-            listView.SetAdapter(adapter: callAdapter);
-#pragma warning restore CS0618 // 형식 또는 멤버는 사용되지 않습니다.
+            listView.SetAdapter(callAdapter);
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "강용현");
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "안용욱");
             callAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "차재훈");
@@ -55,13 +55,17 @@ namespace stac2018_2
 
         private void MoreInfoButton_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(MoreInfoActivity));
+            Intent intent = new Intent(this, typeof(MoreInfoActivity));
+            intent.SetFlags(ActivityFlags.NoHistory);
+            StartActivity(intent);
             OverridePendingTransition(0, 0);
         }
 
         private void UserIfoButton_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(MainActivity));
+            Intent intent = new Intent(this, typeof(MainActivity));
+            intent.SetFlags(ActivityFlags.NoHistory);
+            StartActivity(intent);
             OverridePendingTransition(0, 0);
         }
     }

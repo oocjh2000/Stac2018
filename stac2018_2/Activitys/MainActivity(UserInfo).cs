@@ -75,7 +75,7 @@ namespace stac2018_2
         private void VideoCallButton_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(VideoCallActivity));
-            intent.SetFlags(ActivityFlags.ClearWhenTaskReset);
+            intent.SetFlags(ActivityFlags.NoHistory);
             StartActivity(intent);
             OverridePendingTransition(0,0);
         }
@@ -83,7 +83,7 @@ namespace stac2018_2
         private void MoreOptionButton_Click(object sender, System.EventArgs e)
         {
             Intent intent = new Intent(this, typeof(MoreInfoActivity));
-            intent.SetFlags(ActivityFlags.ClearWhenTaskReset);
+            intent.SetFlags(ActivityFlags.NoHistory);
             StartActivity(intent);
             OverridePendingTransition(0, 0);
         }

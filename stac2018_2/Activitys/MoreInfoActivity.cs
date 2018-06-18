@@ -1,12 +1,13 @@
 ﻿using System;
 
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Widget;
 
 namespace stac2018_2
 {
-    [Activity(Label = "MoreInfoActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Label = "MoreInfoActivity", Theme = "@style/AppTheme", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MoreInfoActivity : Activity
     {
         ImageButton UserIfoButton;
@@ -18,6 +19,7 @@ namespace stac2018_2
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.MoreInfoLayout);
+        
             UserIfoButton = FindViewById<ImageButton>(Resource.Id.UserInfoButton);
             VideoCallButton = FindViewById<ImageButton>(Resource.Id.ViedoCallButton);
 
@@ -34,13 +36,17 @@ namespace stac2018_2
 
         private void VideoCallButton_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(VideoCallActivity));
+            Intent intent = new Intent(this, typeof(VideoCallActivity));
+            intent.SetFlags(ActivityFlags.NoHistory);
+            StartActivity(intent);
             OverridePendingTransition(0, 0);
         }
 
         private void UserIfoButton_Click(object sender, EventArgs e)
         {
-           StartActivity(typeof(MainActivity));
+            Intent intent = new Intent(this, typeof(MainActivity));
+            intent.SetFlags(ActivityFlags.NoHistory);
+            StartActivity(intent);
             OverridePendingTransition(0, 0);
         }
     }
