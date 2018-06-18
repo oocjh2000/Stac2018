@@ -60,14 +60,14 @@
                     p1:id="@+id/linearLayout7"
                     p1:gravity="center">
                     <TextView
-                        p1:text="1회"
+                        p1:text="1회 "
                         p1:layout_width="wrap_content"
                         p1:layout_height="match_parent"
                         p1:textSize="25dp"
                         p1:textStyle="bold"
                         p1:textColor="#ffffffff" />
                     <TextView
-                        p1:text="Text"
+                        p1:text="5"
                         p1:layout_width="wrap_content"
                         p1:layout_height="match_parent"
                         p1:id="@+id/CountOfPeel"
