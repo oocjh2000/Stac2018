@@ -14,6 +14,10 @@ namespace stac2018_2
         ImageButton VideoCallButton;
         private BackPressCloseHandler BackPressCloseHandler;
 
+        ListView listView;
+        VideoCallAdapter videoCallAdapter;
+            
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -22,6 +26,12 @@ namespace stac2018_2
         
             UserIfoButton = FindViewById<ImageButton>(Resource.Id.UserInfoButton);
             VideoCallButton = FindViewById<ImageButton>(Resource.Id.ViedoCallButton);
+
+            listView = FindViewById<ListView>(Resource.Id.OptionListView);
+            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "정보등록 / 수정");
+            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.icon_setting), "정보등록 / 수정");
+            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.icon_info), "정보등록 / 수정");
+
 
             BackPressCloseHandler = new BackPressCloseHandler(this);
 
