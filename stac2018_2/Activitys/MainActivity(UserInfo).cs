@@ -10,27 +10,35 @@ using Android.Views;
 
 namespace stac2018_2
 {
-    [Activity(Name="User.Info.Activity", Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true,ScreenOrientation =Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Name = "User.Info.Activity", Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
-        ImageButton MoreOptionButton; 
+        ImageButton MoreOptionButton;
         ImageButton VideoCallButton;
 
         ImageButton HeartInfoButton;
         ImageButton PeelSetButton;
         ImageButton TimerSetButton;
 
+       // ImageButton PeelPlusButton;
+        ImageButton PeellMinusButton;
+
+
+
+        public static int peelCounts = 5;
+
         private BackPressCloseHandler BackPressCloseHandler;
 
         Drawable BackGround;
         Drawable BackGroundWhite;
+        TextView CountPeel_popup;
         View view;
         PopupWindow popupWindow;
-        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-          
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.UserInfoLayout);
 
@@ -44,23 +52,57 @@ namespace stac2018_2
             PeelSetButton = FindViewById<ImageButton>(Resource.Id.PeelICon);
             TimerSetButton = FindViewById<ImageButton>(Resource.Id.TimerIcon);
 
+           // PeelPlusButton = FindViewById<ImageButton>(Resource.Id.PeelPlusButton);
+            PeellMinusButton = FindViewById<ImageButton>(Resource.Id.PeelMinusButton);
+
             BackPressCloseHandler = new BackPressCloseHandler(this);
 
-          
-
+            CountPeel_popup = FindViewById<TextView>(Resource.Id.CountOfPeel);
 
             VideoCallButton.Click += VideoCallButton_Click;
             MoreOptionButton.Click += MoreOptionButton_Click;
             HeartInfoButton.Click += HeartInfoButton_Click;
-            PeelSetButton.Click += PeelSetButton_Click;
+            //PeelSetButton.Click += PeelSetButton_Click;
+
         }
 
-        private void PeelSetButton_Click(object sender, System.EventArgs e)
+
+        [Java.Interop.Export("OnClick")]
+        public void OnClick(View v)
         {
-            view = LayoutInflater.Inflate(Resource.Layout.PeelSetLayout, null);
-            popupWindow = new PopupWindow(view, LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
-            popupWindow.Focusable = true;
-            popupWindow.ShowAtLocation(view, GravityFlags.Center, 0, -200);
+            if (v.Id == PeelSetButton.Id)
+            {
+                LayoutInflater layoutInflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
+                view = LayoutInflater.Inflate(Resource.Layout.PeelSetLayout, null);
+                popupWindow = new PopupWindow(view, LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                popupWindow.Focusable = true;
+               
+
+                ImageButton PeelPlusButton = FindViewById<ImageButton>(Resource.Id.PeelPlusButton);
+               
+                popupWindow.ShowAtLocation(view, GravityFlags.Center, 0, -200);
+
+            }
+            if (v.Id == Resource.Id.PeelPlusButton)
+            {
+                peelCounts++;
+                CountPeel_popup.Text = peelCounts.ToString();
+            }
+          
+        }
+
+
+
+
+        private void PeelSetButton_Click(object sender, System.EventArgs e)
+        { 
+            
+        }
+
+        private void Button_Click(object sender, System.EventArgs e)
+        {
+            peelCounts++;
+            FindViewById<TextView>(Resource.Id.CountOfPeel).Text = peelCounts.ToString();
         }
 
         private void HeartInfoButton_Click(object sender, System.EventArgs e)

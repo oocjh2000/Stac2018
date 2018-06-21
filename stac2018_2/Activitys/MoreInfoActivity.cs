@@ -34,8 +34,8 @@ namespace stac2018_2
             listView.SetAdapter(videoCallAdapter);
 #pragma warning disable CS0618 // 형식 또는 멤버는 사용되지 않습니다.
             videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.peopleicon), "정보등록 / 수정");
-            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.settingicon), "정보등록 / 수정");
-            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.infoicon), "정보등록 / 수정");
+            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.settingicon), "환경설정");
+            videoCallAdapter.AddItem(GetDrawable(Resource.Drawable.infoicon), "앱정보");
 
 
             BackPressCloseHandler = new BackPressCloseHandler(this);

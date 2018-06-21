@@ -2387,8 +2387,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int CallListView = 2131230925;
+			// aapt resource value: 0x7f0800d0
+			public const int CallListView = 2131230928;
 			
 			// aapt resource value: 0x7f0800c5
 			public const int CountOfPeel = 2131230917;
@@ -2402,14 +2402,14 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080035
 			public const int META = 2131230773;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int MapIcon = 2131230923;
+			// aapt resource value: 0x7f0800ce
+			public const int MapIcon = 2131230926;
 			
 			// aapt resource value: 0x7f080090
 			public const int MoreOptionButton = 2131230864;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int Name = 2131230926;
+			// aapt resource value: 0x7f0800d1
+			public const int Name = 2131230929;
 			
 			// aapt resource value: 0x7f0800b0
 			public const int OptionListView = 2131230896;
@@ -2423,20 +2423,23 @@ namespace stac2018_2
 			// aapt resource value: 0x7f0800c6
 			public const int PeelPlusButton = 2131230918;
 			
+			// aapt resource value: 0x7f0800cc
+			public const int PeelViewMain = 2131230924;
+			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
 			
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int TimerIcon = 2131230922;
+			// aapt resource value: 0x7f0800cd
+			public const int TimerIcon = 2131230925;
 			
 			// aapt resource value: 0x7f08008f
 			public const int UserInfoButton = 2131230863;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int VideoCallButton = 2131230924;
+			// aapt resource value: 0x7f0800cf
+			public const int VideoCallButton = 2131230927;
 			
 			// aapt resource value: 0x7f08008e
 			public const int ViedoCallButton = 2131230862;
@@ -2711,14 +2714,17 @@ namespace stac2018_2
 			// aapt resource value: 0x7f0800ac
 			public const int linearLayout8 = 2131230892;
 			
+			// aapt resource value: 0x7f0800ca
+			public const int linearLayout9 = 2131230922;
+			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
 			
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int masked = 2131230928;
+			// aapt resource value: 0x7f0800d3
+			public const int masked = 2131230931;
 			
 			// aapt resource value: 0x7f0800b7
 			public const int media_actions = 2131230903;
@@ -2918,6 +2924,9 @@ namespace stac2018_2
 			// aapt resource value: 0x7f0800a1
 			public const int textView1 = 2131230881;
 			
+			// aapt resource value: 0x7f0800cb
+			public const int textView11 = 2131230923;
+			
 			// aapt resource value: 0x7f0800a8
 			public const int textView2 = 2131230888;
 			
@@ -2999,8 +3008,8 @@ namespace stac2018_2
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800cf
-			public const int visible = 2131230927;
+			// aapt resource value: 0x7f0800d2
+			public const int visible = 2131230930;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

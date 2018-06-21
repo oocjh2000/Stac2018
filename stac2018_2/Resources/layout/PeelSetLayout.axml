@@ -30,7 +30,8 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/PeelMinusButton"
                 p1:scaleType="fitCenter"
-                p1:background="#ff69ff61" />
+                p1:background="#ff69ff61"
+                p1:onClick="OnClick" />
         </LinearLayout>
         <LinearLayout
             p1:orientation="vertical"
@@ -108,7 +109,8 @@
                 p1:adjustViewBounds="true"
                 p1:id="@+id/PeelPlusButton"
                 p1:scaleType="fitCenter"
-                p1:background="#ff69ff61" />
+                p1:background="#ff69ff61"
+                p1:onClick="OnClick" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

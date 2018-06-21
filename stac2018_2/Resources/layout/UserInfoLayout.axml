@@ -79,15 +79,36 @@
                 p1:layout_height="100dp"
                 p1:id="@+id/PeelICon"
                 p1:scaleType="fitCenter"
-                p1:background="#ffffffff" />
-            <TextView
-                p1:text="1회 5알"
+                p1:background="#ffffffff"
+                p1:onClick="OnClick" />
+            <LinearLayout
+                p1:orientation="horizontal"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
-                p1:id="@+id/textView3"
-                p1:gravity="center"
-                p1:textColor="#ff000000"
-                p1:textSize="25dp" />
+                p1:id="@+id/linearLayout9"
+                p1:gravity="center">
+                <TextView
+                    p1:text="1회"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/textView11"
+                    p1:textColor="#ff000000"
+                    p1:textSize="25dp" />
+                <TextView
+                    p1:text="5"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/PeelViewMain"
+                    p1:textColor="#ff000000"
+                    p1:textSize="25dp" />
+                <TextView
+                    p1:text="알"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/textView9"
+                    p1:textColor="#ff000000"
+                    p1:textSize="25dp" />
+            </LinearLayout>
             <TextView
                 p1:text="투여 량"
                 p1:layout_width="match_parent"
