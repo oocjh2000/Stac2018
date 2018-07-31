@@ -110,7 +110,7 @@
                 p1:id="@+id/PeelPlusButton"
                 p1:scaleType="fitCenter"
                 p1:background="#ff69ff61"
-                p1:onClick="OnClick" />
+                p1:onClick="PeelPlus" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

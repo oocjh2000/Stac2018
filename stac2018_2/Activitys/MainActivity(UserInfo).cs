@@ -62,41 +62,48 @@ namespace stac2018_2
             VideoCallButton.Click += VideoCallButton_Click;
             MoreOptionButton.Click += MoreOptionButton_Click;
             HeartInfoButton.Click += HeartInfoButton_Click;
+            TimerSetButton.Click += TimerSetButton_Click;
             //PeelSetButton.Click += PeelSetButton_Click;
+
 
         }
 
+        private void TimerSetButton_Click(object sender, System.EventArgs e)
+        {
+            LayoutInflater layoutInflater = (LayoutInflater)this.GetSystemService(LayoutInflaterService);
+            view = LayoutInflater.Inflate(Resource.Layout.PeelTimeLayout, null);
+            popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
+            popupWindow.Focusable = true;
+            popupWindow.ShowAtLocation(view, GravityFlags.Center, 0, 420);
+
+        }
 
         [Java.Interop.Export("OnClick")]
         public void OnClick(View v)
         {
             if (v.Id == PeelSetButton.Id)
             {
-                LayoutInflater layoutInflater = (LayoutInflater)this.GetSystemService(Context.LayoutInflaterService);
+                LayoutInflater layoutInflater = (LayoutInflater)this.GetSystemService(LayoutInflaterService);
                 view = LayoutInflater.Inflate(Resource.Layout.PeelSetLayout, null);
-                popupWindow = new PopupWindow(view, LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                popupWindow = new PopupWindow(view, ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.WrapContent);
                 popupWindow.Focusable = true;
-               
 
+
+               
                 ImageButton PeelPlusButton = FindViewById<ImageButton>(Resource.Id.PeelPlusButton);
                
                 popupWindow.ShowAtLocation(view, GravityFlags.Center, 0, -200);
 
             }
-            if (v.Id == Resource.Id.PeelPlusButton)
-            {
-                peelCounts++;
-                CountPeel_popup.Text = peelCounts.ToString();
-            }
           
         }
 
-
-
-
-        private void PeelSetButton_Click(object sender, System.EventArgs e)
-        { 
+        [Java.Interop.Export("PeelPlus")]
+        public void PeelPlus(View v)
+        {
             
+          
+            popupWindow.Dismiss();
         }
 
         private void Button_Click(object sender, System.EventArgs e)
