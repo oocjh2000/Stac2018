@@ -60,7 +60,6 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFile1.cs" />
     <Compile Include="VideoCallAdapter.cs" />
     <Compile Include="Handler\BackButtonCloseHandler.cs" />
     <Compile Include="Activitys\MoreInfoActivity.cs" />
